@@ -1,5 +1,5 @@
 {% set name = "glue-qt" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glue-qt-{{ version }}.tar.gz
-  sha256: 26a7f10e8bb58426512921355a0b9078698170fcc66504b2174969e1d1073d42
+  sha256: c212fdfa1c257dada21a645a19bdb8c2408e07958cd88fe2fec1660c12fdfadb
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - __unix     # [unix]
 
     - python >=3.8
-    - glue-core >=1.12.0
+    - glue-core >=1.13.1
     - numpy >=1.17
     - matplotlib-base >=3.2
     - scipy >=1.1
