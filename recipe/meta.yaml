@@ -1,5 +1,5 @@
 {% set name = "glue-qt" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/glue-qt-{{ version }}.tar.gz
-  sha256: c212fdfa1c257dada21a645a19bdb8c2408e07958cd88fe2fec1660c12fdfadb
+  sha256: a1dbec1fa8cf636bd13dbf62854b193857ad27eb18a4ed69d6b50bf0e0f4cc97
 
 build:
   noarch: python
