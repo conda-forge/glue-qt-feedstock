@@ -10,7 +10,6 @@ source:
   sha256: a1dbec1fa8cf636bd13dbf62854b193857ad27eb18a4ed69d6b50bf0e0f4cc97
 
 build:
-  noarch: python
   entry_points:
     - glue = glue_qt.main:main
   script: {{ PYTHON }} -m pip install . -vv
@@ -29,8 +28,6 @@ requirements:
     # The following is needed to make sure that the package works as a GUI
     # application (glue needs to be run with python.app, not python)
     - python.app  # [osx]
-    - __win      # [win]
-    - __unix     # [unix]
 
     - python >=3.8
     - glue-core >=1.13.1
