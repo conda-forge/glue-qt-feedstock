@@ -44,7 +44,7 @@ requirements:
     - pvextractor >=0.2
     - importlib-resources >=1.3
     - importlib-metadata >=3.6
-
+    - pyqt
 test:
   imports:
     - glue_qt
