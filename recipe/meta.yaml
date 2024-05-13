@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python
     - setuptools-scm
     - pip
   run:
@@ -29,7 +29,7 @@ requirements:
     # application (glue needs to be run with python.app, not python)
     - python.app  # [osx]
 
-    - python >=3.8
+    - python
     - glue-core >=1.15.0
     - numpy >=1.17
     - matplotlib-base >=3.2
