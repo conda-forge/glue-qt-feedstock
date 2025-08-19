@@ -1,5 +1,5 @@
 {% set name = "glue-qt" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d3e8aa2e1f4092dfe8158523a4c9508f0759a400e8cca8a711669361ce23e883
+  sha256: 164133be67b8bb18ff31d922efb9e96ed0b8162ecfe122df4d65278c7a642713
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   string: win_pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [win]
   string: unix_pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [unix]
-  number: 1
+  number: 0
   osx_is_app: true  # [osx]
 
 requirements:
